@@ -35,7 +35,7 @@ import UIKit
             options: PagingOptions = PagingOptions(),
             items: [Item],
             selectedIndex: Binding<Int> = .constant(0),
-            content: @escaping (Item) -> Page
+            @ViewBuilder content: @escaping (Item) -> Page
         ) {
             _selectedIndex = selectedIndex
             self.options = options
